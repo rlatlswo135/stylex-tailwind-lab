@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: Arial, "Apple SD Gothic Neo", sans-serif;
+  line-height: 1.5;
+}
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button {
+  border: 0;
+  cursor: pointer;
+}
+a {
+  color: inherit;
+}
+button:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}
