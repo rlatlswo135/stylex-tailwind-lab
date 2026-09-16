@@ -162,12 +162,12 @@ export const App = () => {
           작성 경험부터 빌드 결과까지, 추측 대신 코드를 놓고 비교합니다.
         </p>
       </div>
-      <nav className="tabs" aria-label="비교 주제">
+      <nav className="tabs">
         {tabs.map((t) => (
           <a
             key={t.id}
             href={`#${t.id}`}
-            aria-current={tab === t.id ? "page" : undefined}
+            className={tab === t.id ? "active" : undefined}
           >
             {t.label}
           </a>
@@ -242,8 +242,7 @@ export const App = () => {
                     ["dynamic", "런타임 값"],
                   ].map(([id, label]) => (
                     <button
-                      className="control"
-                      aria-pressed={scenario === id}
+                      className={`control${scenario === id ? " active" : ""}`}
                       key={id}
                       onClick={() => setScenario(id)}
                     >
@@ -283,7 +282,6 @@ export const App = () => {
                 <label>
                   진행률 {progress}%
                   <input
-                    aria-label="진행률"
                     type="range"
                     min="0"
                     max="100"

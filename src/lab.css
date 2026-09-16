@@ -66,7 +66,7 @@ p {
   border-radius: 999px;
   font-size: 14px;
 }
-.tabs a[aria-current="page"] {
+.tabs a.active {
   background: #172b29;
   color: white;
 }
@@ -141,6 +141,9 @@ p {
   border-radius: 8px;
   text-decoration: none;
   font-size: 14px;
+}
+.control.active {
+  background: #137c66;
 }
 label {
   display: inline-flex;

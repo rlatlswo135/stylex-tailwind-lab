@@ -55,14 +55,7 @@ export const QuotaCard = ({ progress = 64, selected = false }: CardProps) => (
     <p {...stylex.props(styles.description)}>
       프로젝트의 사용량을 한눈에 확인하세요.
     </p>
-    <div
-      role="progressbar"
-      aria-label="사용량"
-      aria-valuenow={progress}
-      aria-valuemin={0}
-      aria-valuemax={100}
-      {...stylex.props(styles.track)}
-    >
+    <div {...stylex.props(styles.track)}>
       <div {...stylex.props(styles.fill(progress))} />
     </div>
     <button type="button" {...stylex.props(styles.button)}>

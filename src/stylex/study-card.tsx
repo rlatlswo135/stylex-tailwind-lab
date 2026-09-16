@@ -66,14 +66,7 @@ export const StudyCard = ({
     <p {...stylex.props(styles.description)}>
       같은 화면, 다른 표현. 코드를 읽고 직접 비교해 보세요.
     </p>
-    <div
-      role="progressbar"
-      aria-label="읽기 진행률"
-      aria-valuenow={progress}
-      aria-valuemin={0}
-      aria-valuemax={100}
-      {...stylex.props(styles.track)}
-    >
+    <div {...stylex.props(styles.track)}>
       <div {...stylex.props(styles.fill(progress))} />
     </div>
     <button type="button" {...stylex.props(styles.button)}>

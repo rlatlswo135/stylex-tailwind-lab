@@ -22,14 +22,7 @@ export const StudyCard = ({
     <p className="text-sm leading-[1.6] text-[#5f716c]">
       같은 화면, 다른 표현. 코드를 읽고 직접 비교해 보세요.
     </p>
-    <div
-      role="progressbar"
-      aria-label="읽기 진행률"
-      aria-valuenow={progress}
-      aria-valuemin={0}
-      aria-valuemax={100}
-      className="h-1.5 overflow-hidden rounded-[99px] bg-[#dce5e1]"
-    >
+    <div className="h-1.5 overflow-hidden rounded-[99px] bg-[#dce5e1]">
       <div
         className="h-full w-[var(--progress)] bg-[#137c66]"
         style={{ "--progress": `${progress}%` } as CSSProperties}

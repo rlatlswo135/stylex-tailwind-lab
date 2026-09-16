@@ -16,14 +16,7 @@ export const QuotaCard = ({ progress = 64, selected = false }: CardProps) => (
     <p className="text-sm leading-[1.6] text-muted">
       프로젝트의 사용량을 한눈에 확인하세요.
     </p>
-    <div
-      role="progressbar"
-      aria-label="사용량"
-      aria-valuenow={progress}
-      aria-valuemin={0}
-      aria-valuemax={100}
-      className="h-1.5 overflow-hidden rounded-[99px] bg-line"
-    >
+    <div className="h-1.5 overflow-hidden rounded-[99px] bg-line">
       <div
         className="h-full w-[var(--progress)] bg-accent"
         style={{ "--progress": `${progress}%` } as CSSProperties}

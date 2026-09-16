@@ -164,7 +164,7 @@ export const Benchmark = ({
         </button>
       </div>
       <details open>
-        <summary aria-live="polite">
+        <summary>
           {running ? "측정 중" : "측정 결과"}
         </summary>
         <pre className="source">{result}</pre>
