@@ -1,5 +1,5 @@
 import * as stylex from "@stylexjs/stylex";
-import { tokens } from "./tokens.stylex";
+import { fontSize, tokens } from "./tokens.stylex";
 import type { CardProps } from "../shared/types";
 
 const styles = stylex.create({
@@ -17,7 +17,7 @@ const styles = stylex.create({
   },
   selected: { borderColor: tokens.accent, backgroundColor: "#effaf5" },
   label: {
-    fontSize: 12,
+    fontSize: fontSize.small,
     fontWeight: 700,
     letterSpacing: 2,
     color: tokens.accent,

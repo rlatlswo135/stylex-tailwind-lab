@@ -1,7 +1,7 @@
 import * as stylex from "@stylexjs/stylex";
 import type { CardProps } from "../shared/types";
 
-const styles = stylex.create({
+const styles = stylex.create({s
   card: {
     backgroundColor: "#fff",
     color: "#172b29",
